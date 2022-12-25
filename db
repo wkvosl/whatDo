@@ -1,6 +1,21 @@
-index, user_id, user_pw, user_email
+schema1_test
 
-1	user1	user1	user1@whatdo.com
-2	user2	user2	user2@whatdo.com
-3	user3	user3	user3@whatdo.com
-4	user4	user4	user4@whatdo.com
+user_tbl
+user_index, user_id, user_pw, user_email (100), user_joindate
+
+1	user1	user1	user1@whatdo.com	2018-02-18
+2	user2	user2	user2@whatdo.com	2020-07-14
+3	user3	user3	user3@whatdo.com	2021-05-29
+4	user4	user4	user4@whatdo.com	2022-11-30
+16	user5	123	user5@whatdo.com	2022-12-24
+17	user6	user6	user6@whatdo.com	2022-12-24
+18	user7	user7	user7@whatdo.com	2022-12-24
+19	user8	user8	user8@whatdo.com	2022-12-24
+20	user9	user9	user9@whatdo.com	2022-12-24
+21	user10	user10	user10@whatdo.com	2022-12-25
+22	user11	user11	user11@whatdo.com	2022-12-25
+
+
+whatdo_tbl
+whatdo_index, whatdo_title, whatdo_whendate, whatdo_writedate, whatdo_subject
+whatdo_content, user_index(foreign key) 
